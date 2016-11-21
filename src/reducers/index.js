@@ -14,13 +14,11 @@ import {
   RECEIVE_REPS,
 } from '../types';
 
-let initialActive = {  age: 36,  agency: "Houston Police Department",  armed: "Unarmed",  cause: "Vehicle",  charges: "Charged",  city: "Richmond",  county: "Fort Bend",  date: "2016-08-12",  description: null,  disposition: "Charged with manslaughter",  gender: "Male",  id: 2,  image_url: "http://www.khou.com/img/resize/content.khou.com/photo/2016/08/16/brian-manring_1471385260215_5377214_ver1.0.jpg?preset=video-still",  link_url: "http://www.chron.com/local/article/Deputies-Houston-police-officer-charged-in-fatal-9170856.php#photo-10746995",  mental_illness: "Drug or alcohol use",  name: "Brian Manring",  race: "White",  state: "TX",  street: "Westmoor Dr & Beechnut Rd",  zip: "77407",};
-//TODO REMOVE INITIALACTIVE AND INITIAL STATE IN PEOPLE REDUCER
 function people(state = {
   fetching: true,
   query: '',
   data: [],
-  active: initialActive,
+  active: {},
 }, action) {
   switch (action.type) {
     case REQUEST_RECORDS:
