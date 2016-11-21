@@ -10,7 +10,7 @@ export const RECEIVE_VIDEOS = "RECEIVE_VIDEOS";
 export const REQUEST_REPS = "REQUEST_REPS";
 export const RECEIVE_REPS = "RECEIVE_REPS";
 
-const ROOT = "http://localhost:3000/"
+const ROOT = "http://police.millenialsears.com/"
 export const PEOPLE = ROOT + "people/";
 export const VIDEOS = ROOT + "videos/";
 export const REPS = ROOT + "representatives/";
