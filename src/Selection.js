@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import store from './index';
-import { fetchRecords } from './actions';
+import { fetchRecords, resetPage } from './actions';
 import { VALID_QUERIES } from './types';
 import MySelect from './dumb/MySelect';
 
@@ -14,6 +14,7 @@ class Selection extends Component {
         q += key + "=" + query[key] + "&"
       }
     }
+    store.dispatch(resetPage());
     store.dispatch(fetchRecords(q));
   }
 

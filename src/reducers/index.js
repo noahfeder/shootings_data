@@ -12,6 +12,7 @@ import {
   RECEIVE_VIDEOS,
   REQUEST_REPS,
   RECEIVE_REPS,
+  RESET_PAGE,
 } from '../types';
 
 function people(state = {
@@ -83,6 +84,13 @@ function page(state = {
         size: action.size,
       };
       return { ...state, ...newState };
+    }
+    case RESET_PAGE: {
+      return {
+        ...state,
+        min: 0,
+        max: 10,
+      }
     }
     default:
       return state;

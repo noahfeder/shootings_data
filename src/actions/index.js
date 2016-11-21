@@ -13,6 +13,7 @@ import {
   PEOPLE,
   VIDEOS,
   REPS,
+  RESET_PAGE,
 } from '../types';
 
 
@@ -71,6 +72,14 @@ export function pageSize(size) {
     dispatch({
       type: PAGE_SIZE,
       size: size,
+    });
+  };
+}
+
+export function resetPage() {
+  return function(dispatch) {
+    dispatch({
+      type: RESET_PAGE,
     });
   };
 }

@@ -13,7 +13,7 @@ class Pagination extends Component {
   }
 
   pageUp() {
-    if (this.props.max - this.props.data.length < 0) {
+    if (this.props.max - this.props.dataLength < 0) {
       store.dispatch(pageUp());
     }
   }

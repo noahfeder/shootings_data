@@ -9,6 +9,7 @@ export const REQUEST_VIDEOS = "REQUEST_VIDEOS";
 export const RECEIVE_VIDEOS = "RECEIVE_VIDEOS";
 export const REQUEST_REPS = "REQUEST_REPS";
 export const RECEIVE_REPS = "RECEIVE_REPS";
+export const RESET_PAGE = "RESET_PAGE";
 
 const ROOT = "http://police.millenialsears.com/"
 export const PEOPLE = ROOT + "people/";
