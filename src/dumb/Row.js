@@ -7,7 +7,6 @@ import { setActive } from '../actions';
 export default class Row extends Component {
 
   setActive() {
-    console.log(this.props)
     return store.dispatch(setActive(this.props));
   }
 

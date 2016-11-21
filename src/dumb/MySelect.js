@@ -20,6 +20,8 @@ export default class MySelect extends Component {
         return "Armed";
       case "charges":
         return "Charges";
+      case "order":
+        return "Order by";
       default:
         return '';
     }
